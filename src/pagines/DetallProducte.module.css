@@ -1,0 +1,361 @@
+/* src/pagines/DetallProducte.module.css */
+
+.pàgina {
+  width: 100%;
+  padding-block: var(--space-xl) var(--space-3xl);
+}
+
+.interior {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: var(--margin-mobile);
+}
+
+@media (min-width: 768px) {
+  .interior {
+    padding-inline: var(--margin);
+  }
+}
+
+@media (min-width: 1024px) {
+  .interior {
+    padding-inline: var(--margin-desktop);
+  }
+}
+
+/* Fil de pa i botó enrere */
+.navegacio {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xl);
+}
+
+.boto-torna {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-lg);
+  background: none;
+  border: 1px solid var(--color-outline-variant);
+  color: var(--color-on-surface-variant);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-md);
+  font-weight: var(--fw-label-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.boto-torna:hover {
+  border-color: var(--color-primary-container);
+  color: var(--color-primary-fixed);
+  background-color: color-mix(in srgb, var(--color-primary-container) 8%, transparent);
+}
+
+.boto-torna:focus-visible {
+  outline: 2px solid var(--color-primary-container);
+  outline-offset: 2px;
+}
+
+/* ─── Graella principal: imatge | info ───────────── */
+.graella {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .graella {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* ─── Columna d'imatge ───────────────────────────── */
+.imatge-contenidor {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-xl);
+  background-color: var(--color-surface-container-lowest);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--color-on-surface) 7%, transparent);
+}
+
+.imatge {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imatge-esgotada {
+  filter: grayscale(80%) brightness(0.75);
+}
+
+/* Badges a la imatge */
+.imatge-badges {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.badge-etiqueta {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-sm);
+  font-weight: var(--fw-label-sm);
+  letter-spacing: var(--ls-label-sm);
+  text-transform: uppercase;
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-fixed);
+}
+
+.badge-esgotat-imatge {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: color-mix(in srgb, var(--color-surface-container-lowest) 50%, transparent);
+}
+
+.badge-esgotat-text {
+  padding: 6px 16px;
+  border-radius: var(--radius-base);
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-lg);
+  font-weight: var(--fw-label-lg);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ─── Columna d'informació ───────────────────────── */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+/* Capçal: categoria + estat */
+.info-capcal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.categoria-label {
+  font-family: var(--font-heading);
+  font-size: var(--text-label-sm);
+  font-weight: var(--fw-label-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-outline);
+}
+
+.estat-estoc {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-sm);
+  font-weight: var(--fw-label-sm);
+}
+
+.punt-estoc {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.en-estoc   { color: var(--color-secondary-fixed); }
+.punt-en-estoc  { background-color: var(--color-secondary-fixed); }
+.esgotat    { color: var(--color-error); }
+.punt-esgotat   { background-color: var(--color-error); }
+
+/* Nom del producte */
+.nom {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-xl-mobile);
+  line-height: var(--lh-headline-xl-mobile);
+  letter-spacing: var(--ls-headline-xl);
+  font-weight: var(--fw-headline-xl);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .nom {
+    font-size: var(--text-headline-xl);
+    line-height: var(--lh-headline-xl);
+  }
+}
+
+/* Preu */
+.preu-contenidor {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-xs);
+}
+
+.preu {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-lg);
+  line-height: var(--lh-headline-lg);
+  font-weight: var(--fw-headline-lg);
+  color: var(--color-on-surface);
+  font-variant-numeric: tabular-nums;
+}
+
+.iva-label {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-variant);
+}
+
+/* Divisor */
+.divisor {
+  height: 1px;
+  background-color: color-mix(in srgb, var(--color-on-surface) 8%, transparent);
+}
+
+/* Descripció */
+.descripcio-titol {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-sm);
+  font-weight: var(--fw-headline-sm);
+  color: var(--color-on-surface);
+  margin: 0 0 var(--space-xs) 0;
+}
+
+.descripcio {
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body-md);
+  color: var(--color-on-surface-variant);
+  margin: 0;
+}
+
+/* Selector de quantitat + estoc disponible */
+.quantitat-zona {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.quantitat-label {
+  font-family: var(--font-heading);
+  font-size: var(--text-label-md);
+  font-weight: var(--fw-label-md);
+  color: var(--color-on-surface);
+}
+
+.quantitat-fila {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.estoc-disponible {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-variant);
+}
+
+/* Botons d'acció */
+.accions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 480px) {
+  .accions {
+    flex-direction: row;
+  }
+}
+
+.boto-afegir {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  height: 48px;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-fixed);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-lg);
+  font-weight: var(--fw-label-lg);
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-normal), transform var(--transition-fast);
+}
+
+.boto-afegir:hover:not(:disabled) {
+  background-color: var(--color-primary-fixed-dim);
+  transform: translateY(-1px);
+}
+
+.boto-afegir:focus-visible {
+  outline: 2px solid var(--color-primary-container);
+  outline-offset: 2px;
+}
+
+.boto-afegir:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.boto-esgotat-avisa {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  height: 48px;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface-container-high);
+  color: color-mix(in srgb, var(--color-on-surface-variant) 70%, transparent);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-md);
+  font-weight: var(--fw-label-md);
+  border: none;
+  cursor: not-allowed;
+}
+
+/* Missatge "Afegit al carro" */
+.missatge-afegit {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-lg);
+  background-color: color-mix(in srgb, var(--color-secondary-fixed) 15%, transparent);
+  border: 1px solid var(--color-secondary-fixed);
+  color: var(--color-secondary-fixed);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-md);
+  font-weight: var(--fw-label-md);
+}
+
+.iconaTorna {
+  font-size: 18px;
+}
+
+.iconaAccio {
+  font-size: 20px;
+}
+
