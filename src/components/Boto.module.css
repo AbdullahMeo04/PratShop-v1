@@ -1,0 +1,105 @@
+/* src/components/Boto.module.css */
+
+/* Boto base – compartit per totes les variants */
+.boto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-lg);
+  line-height: var(--lh-label-lg);
+  letter-spacing: var(--ls-label-lg);
+  font-weight: var(--fw-label-lg);
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  padding: 0 var(--space-lg);
+  height: 48px;
+  transition: background-color var(--transition-normal),
+              color var(--transition-normal),
+              transform var(--transition-fast),
+              box-shadow var(--transition-normal),
+              border-color var(--transition-normal);
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.boto:focus-visible {
+  outline: 2px solid var(--color-primary-container);
+  outline-offset: 2px;
+}
+
+/* Variant primari – fons volt lime, text fosc */
+.primari {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-fixed);
+}
+
+.primari:hover:not(:disabled) {
+  background-color: var(--color-primary-fixed-dim);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px -2px color-mix(in srgb, var(--color-primary-container) 40%, transparent);
+}
+
+.primari:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Variant secundari – fons fosc, vora subtil */
+.secundari {
+  background-color: var(--color-surface-container-high);
+  color: var(--color-on-surface);
+  border: 1px solid var(--color-outline-variant);
+}
+
+.secundari:hover:not(:disabled) {
+  background-color: var(--color-surface-container-highest);
+  border-color: var(--color-primary-container);
+  color: var(--color-primary-fixed);
+}
+
+/* Variant fantasma – transparent, text apagat */
+.fantasma {
+  background-color: transparent;
+  color: var(--color-on-surface-variant);
+  border: 1px solid transparent;
+}
+
+.fantasma:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--color-on-surface) 5%, transparent);
+  color: var(--color-on-surface);
+}
+
+/* Variant perill – per a accions destructives */
+.perill {
+  background-color: var(--color-error-container);
+  color: var(--color-on-error-container);
+}
+
+.perill:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+/* Estat desactivat */
+.boto:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Mida petita */
+.petit {
+  height: 36px;
+  padding: 0 var(--space-md);
+  font-size: var(--text-label-md);
+  line-height: var(--lh-label-md);
+}
+
+/* Amplada completa */
+.amplada-completa {
+  width: 100%;
+}
