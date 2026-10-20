@@ -1,0 +1,196 @@
+/* src/components/Peu.module.css */
+
+.peu {
+  background-color: var(--color-surface-container-lowest);
+  border-top: 1px solid color-mix(in srgb, var(--color-on-surface) 8%, transparent);
+  margin-top: var(--space-3xl);
+}
+
+.interior {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: var(--margin-mobile);
+  padding-block: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .interior {
+    padding-inline: var(--margin);
+  }
+}
+
+@media (min-width: 1024px) {
+  .interior {
+    padding-inline: var(--margin-desktop);
+  }
+}
+
+/* Graella de columnes del peu */
+.columnes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .columnes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .columnes {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+/* Columna de marca */
+.marca {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.marca-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  text-decoration: none;
+}
+
+.marca-icona {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-fixed);
+  border-radius: var(--radius-base);
+}
+
+.marca-nom {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-sm);
+  font-weight: var(--fw-headline-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-on-surface);
+}
+
+.marca-descripcio {
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  line-height: var(--lh-body-md);
+  color: var(--color-on-surface-variant);
+  max-width: 32ch;
+}
+
+.xarxes {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.boto-xarxa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface-container);
+  color: var(--color-on-surface-variant);
+  text-decoration: none;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.boto-xarxa:hover {
+  color: var(--color-on-surface);
+  background-color: var(--color-surface-container-high);
+}
+
+.boto-xarxa:focus-visible {
+  outline: 2px solid var(--color-primary-container);
+  outline-offset: 2px;
+}
+
+.iconaXarxa {
+  font-size: 20px;
+}
+
+/* Columna de navegació */
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.columna-titol {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-sm);
+  font-weight: var(--fw-headline-sm);
+  color: var(--color-on-surface);
+}
+
+.columna-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.columna-link {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  line-height: var(--lh-body-sm);
+  color: var(--color-on-surface-variant);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.columna-link:hover {
+  color: var(--color-on-surface);
+}
+
+/* Fila de copyright */
+.copyright {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid color-mix(in srgb, var(--color-on-surface) 8%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright-text {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  line-height: var(--lh-body-sm);
+  color: var(--color-on-surface-variant);
+}
+
+.copyright-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.copyright-link {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-variant);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.copyright-link:hover {
+  color: var(--color-on-surface);
+}

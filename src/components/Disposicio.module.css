@@ -1,0 +1,21 @@
+/* src/components/Disposicio.module.css */
+
+.contenidor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+/* Espai per a la capçalera enganxosa */
+.principal {
+  flex: 1;
+  padding-top: var(--header-height-desktop);
+}
+
+@media (max-width: 767px) {
+  .principal {
+    padding-top: var(--header-height-mobile);
+    /* Espai per a la barra de navegació inferior */
+    padding-bottom: 64px;
+  }
+}

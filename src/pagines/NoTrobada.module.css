@@ -1,0 +1,73 @@
+/* src/pagines/NoTrobada.module.css */
+/* Estils per a la pantalla d'error 404 (pàgina no trobada) */
+
+.pagina {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icona404 {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface-container);
+  color: var(--color-outline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+  font-size: 40px;
+}
+
+.codiError {
+  font-family: var(--font-heading);
+  font-size: var(--text-display-hero);
+  line-height: var(--lh-display-hero);
+  font-weight: var(--fw-display-hero);
+  color: var(--color-primary-container);
+  letter-spacing: var(--ls-display-hero);
+  margin-bottom: var(--space-2xs);
+}
+
+.titol {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-lg);
+  color: var(--color-on-surface);
+  margin-bottom: var(--space-sm);
+}
+
+.descripcio {
+  font-size: var(--text-body-md);
+  color: var(--color-on-surface-variant);
+  margin-bottom: var(--space-xl);
+  max-width: 440px;
+}
+
+.botoInici {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: var(--space-md) var(--space-xl);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-fixed);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-body-md);
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  transition: opacity var(--transition-fast);
+}
+
+.botoInici:hover {
+  opacity: 0.9;
+}
+
+.iconaBoto {
+  font-size: 20px;
+}
