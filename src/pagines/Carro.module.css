@@ -1,0 +1,335 @@
+/* src/pagines/Carro.module.css */
+/* Estils per a la pàgina de la cistella de la compra */
+
+.pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--gutter);
+}
+
+.titolSeccio {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-xl);
+  line-height: var(--lh-headline-xl);
+  font-weight: var(--fw-headline-xl);
+  color: var(--color-on-surface);
+  letter-spacing: var(--ls-headline-xl);
+  margin-bottom: var(--space-lg);
+}
+
+/* ── Estat Buit ── */
+.estatBuit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-3xl) var(--space-lg);
+  background-color: var(--color-surface-container-low);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-xl);
+  margin-top: var(--space-lg);
+}
+
+.iconaBuit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface-container);
+  color: var(--color-outline);
+  margin-bottom: var(--space-md);
+  font-size: 32px;
+}
+
+.titolBuit {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-lg);
+  color: var(--color-on-surface);
+  margin-bottom: var(--space-xs);
+}
+
+.descripcioBuit {
+  color: var(--color-on-surface-variant);
+  font-size: var(--text-body-md);
+  margin-bottom: var(--space-xl);
+  max-width: 420px;
+}
+
+/* ── Graella de Contingut (Línies + Resum) ── */
+.graella {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .graella {
+    grid-template-columns: 1fr 380px;
+  }
+}
+
+/* ── Llista d'articles ── */
+.llistaArticles {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.bannerEnviament {
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-surface-container);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  color: var(--color-on-surface);
+  font-size: var(--text-body-md);
+}
+
+.bannerEnviamentGratis {
+  border-color: var(--color-primary-container);
+  background-color: var(--color-surface-container-high);
+}
+
+.iconaEnviament {
+  color: var(--color-primary-container);
+  font-size: 24px;
+}
+
+/* ── Targeta de línia del carro ── */
+.targetaLinia {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background-color: var(--color-surface-container-low);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-lg);
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .targetaLinia {
+    grid-template-columns: 110px 1fr auto auto;
+    padding: var(--space-lg);
+    gap: var(--space-lg);
+  }
+}
+
+.contenidorImatge {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-base);
+  overflow: hidden;
+  background-color: var(--color-surface-container-lowest);
+  border: 1px solid var(--color-outline-variant);
+}
+
+.imatgeProducte {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoLinia {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.categoriaLinia {
+  font-size: var(--text-label-sm);
+  color: var(--color-outline);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-label-sm);
+}
+
+.nomLinia {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-sm);
+  color: var(--color-on-surface);
+  text-decoration: none;
+}
+
+.nomLinia:hover {
+  color: var(--color-primary-container);
+}
+
+.preuUnitari {
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-variant);
+  font-variant-numeric: tabular-nums;
+}
+
+.zonaQuantitat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.zonaSubtotal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-xs);
+}
+
+.subtotalLinia {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-sm);
+  color: var(--color-on-surface);
+  font-variant-numeric: tabular-nums;
+}
+
+.botoEliminar {
+  background: transparent;
+  border: none;
+  color: var(--color-outline);
+  cursor: pointer;
+  padding: var(--space-2xs);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+}
+
+.botoEliminar:hover {
+  color: var(--color-error);
+}
+
+.iconaEliminar {
+  font-size: 20px;
+}
+
+/* ── Barra d'accions del carro ── */
+.accionsCarro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-sm);
+}
+
+.botoBuidar {
+  background: transparent;
+  border: 1px solid var(--color-outline-variant);
+  color: var(--color-on-surface-variant);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-base);
+  font-size: var(--text-body-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  transition: all var(--transition-fast);
+}
+
+.botoBuidar:hover {
+  border-color: var(--color-error);
+  color: var(--color-error);
+}
+
+/* ── Resum de la comanda (Caixa Dreta) ── */
+.resumComanda {
+  background-color: var(--color-surface-container);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.titolResum {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-md);
+  color: var(--color-on-surface);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+.filaResum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text-body-md);
+  color: var(--color-on-surface-variant);
+}
+
+.valorResum {
+  color: var(--color-on-surface);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.valorGratis {
+  color: var(--color-primary-container);
+  font-weight: 600;
+}
+
+.divisorResum {
+  height: 1px;
+  background-color: var(--color-outline-variant);
+  margin: var(--space-xs) 0;
+}
+
+.filaTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.etiquetaTotal {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-md);
+  font-weight: var(--fw-headline-md);
+  color: var(--color-on-surface);
+}
+
+.valorTotal {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-lg);
+  font-weight: var(--fw-headline-lg);
+  color: var(--color-primary-container);
+  font-variant-numeric: tabular-nums;
+}
+
+.ivaText {
+  font-size: var(--text-body-sm);
+  color: var(--color-outline);
+  text-align: right;
+  margin-top: calc(-1 * var(--space-xs));
+}
+
+.botoTramitar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  width: 100%;
+  padding: var(--space-md);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-fixed);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-body-md);
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  border: none;
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
+  margin-top: var(--space-sm);
+}
+
+.botoTramitar:hover {
+  opacity: 0.9;
+}
+
+.iconaBoto {
+  font-size: 20px;
+}
