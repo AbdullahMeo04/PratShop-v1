@@ -1,0 +1,249 @@
+/* src/pagines/Compra.module.css */
+/* Estils per a la pàgina de tramitació de la comanda */
+
+.pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--gutter);
+}
+
+.titolSeccio {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-xl);
+  line-height: var(--lh-headline-xl);
+  font-weight: var(--fw-headline-xl);
+  color: var(--color-on-surface);
+  letter-spacing: var(--ls-headline-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.graella {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .graella {
+    grid-template-columns: 1fr 380px;
+  }
+}
+
+/* ── Formulari de Pagament ── */
+.seccioFormulari {
+  background-color: var(--color-surface-container-low);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+}
+
+.titolFormulari {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-md);
+  color: var(--color-on-surface);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+.formulari {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.filaDoble {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 600px) {
+  .filaDoble {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grupCamp {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.etiqueta {
+  font-size: var(--text-label-md);
+  font-weight: var(--fw-label-md);
+  color: var(--color-on-surface);
+}
+
+.campText,
+.selectMetode {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface-container);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-base);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.campText:focus,
+.selectMetode:focus {
+  border-color: var(--color-primary-container);
+}
+
+.campError {
+  border-color: var(--color-error);
+}
+
+.missatgeError {
+  font-size: var(--text-body-sm);
+  color: var(--color-error);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+
+.grupCheckbox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  margin-top: var(--space-xs);
+}
+
+.etiquetaCheckbox {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  cursor: pointer;
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-variant);
+  line-height: var(--lh-body-sm);
+}
+
+.inputCheckbox {
+  margin-top: 3px;
+  accent-color: var(--color-primary-container);
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.botoPagar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  width: 100%;
+  padding: var(--space-md);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-fixed);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-body-md);
+  border-radius: var(--radius-lg);
+  border: none;
+  cursor: pointer;
+  margin-top: var(--space-sm);
+  transition: opacity var(--transition-fast);
+}
+
+.botoPagar:hover {
+  opacity: 0.9;
+}
+
+.iconaBoto {
+  font-size: 20px;
+}
+
+/* ── Resum de la comanda lateral ── */
+.resumLateral {
+  background-color: var(--color-surface-container);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.titolResum {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-md);
+  color: var(--color-on-surface);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-outline-variant);
+}
+
+.llistaMiniArticles {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.miniArticle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-variant);
+}
+
+.miniNom {
+  color: var(--color-on-surface);
+  font-weight: 500;
+}
+
+.miniPreu {
+  font-variant-numeric: tabular-nums;
+}
+
+.divisor {
+  height: 1px;
+  background-color: var(--color-outline-variant);
+  margin: var(--space-xs) 0;
+}
+
+.filaTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.etiquetaTotal {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-md);
+  font-weight: var(--fw-headline-md);
+  color: var(--color-on-surface);
+}
+
+.valorTotal {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-lg);
+  font-weight: var(--fw-headline-lg);
+  color: var(--color-primary-container);
+  font-variant-numeric: tabular-nums;
+}
+
+.garantiaInfo {
+  margin-top: var(--space-sm);
+  padding: var(--space-sm);
+  background-color: var(--color-surface-container-low);
+  border-radius: var(--radius-base);
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-variant);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.iconaGarantia {
+  color: var(--color-primary-container);
+  font-size: 20px;
+}
