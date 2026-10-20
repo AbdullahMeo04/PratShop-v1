@@ -1,0 +1,209 @@
+/* src/pagines/Confirmacio.module.css */
+/* Estils per a la pantalla de confirmació de compra */
+
+.pagina {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--gutter);
+}
+
+.contenidor {
+  background-color: var(--color-surface-container-low);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .contenidor {
+    padding: var(--space-2xl);
+  }
+}
+
+.iconaExit {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-fixed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+  font-size: 36px;
+}
+
+.titol {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-xl);
+  line-height: var(--lh-headline-xl);
+  font-weight: var(--fw-headline-xl);
+  color: var(--color-on-surface);
+  margin-bottom: var(--space-xs);
+}
+
+.subtitol {
+  color: var(--color-on-surface-variant);
+  font-size: var(--text-body-md);
+  margin-bottom: var(--space-xl);
+  max-width: 520px;
+}
+
+.caixaNumero {
+  background-color: var(--color-surface-container);
+  border: 1px dashed var(--color-primary-container);
+  border-radius: var(--radius-base);
+  padding: var(--space-sm) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  margin-bottom: var(--space-xl);
+  width: 100%;
+  max-width: 380px;
+}
+
+.etiquetaNumero {
+  font-size: var(--text-label-sm);
+  color: var(--color-outline);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-label-sm);
+}
+
+.valorNumero {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-md);
+  color: var(--color-primary-container);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Detalls de la comanda ── */
+.detallsComanda {
+  width: 100%;
+  background-color: var(--color-surface-container);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  text-align: left;
+  margin-bottom: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.titolDetall {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-sm);
+  color: var(--color-on-surface);
+  border-bottom: 1px solid var(--color-outline-variant);
+  padding-bottom: var(--space-xs);
+}
+
+.graellaInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  font-size: var(--text-body-sm);
+}
+
+@media (min-width: 600px) {
+  .graellaInfo {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grupInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.labelInfo {
+  color: var(--color-outline);
+  font-size: var(--text-label-sm);
+}
+
+.valorInfo {
+  color: var(--color-on-surface);
+  font-weight: 500;
+}
+
+/* ── Llista d'articles comprats ── */
+.llistaComprats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.filaComprat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text-body-sm);
+  color: var(--color-on-surface-variant);
+}
+
+.nomComprat {
+  color: var(--color-on-surface);
+  font-weight: 500;
+}
+
+.preuComprat {
+  font-variant-numeric: tabular-nums;
+  color: var(--color-on-surface);
+}
+
+.divisor {
+  height: 1px;
+  background-color: var(--color-outline-variant);
+}
+
+.filaTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: var(--space-2xs);
+}
+
+.etiquetaTotal {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-sm);
+  color: var(--color-on-surface);
+}
+
+.valorTotal {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-md);
+  color: var(--color-primary-container);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.botoTornar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: var(--space-md) var(--space-xl);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-fixed);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-body-md);
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  transition: opacity var(--transition-fast);
+}
+
+.botoTornar:hover {
+  opacity: 0.9;
+}
+
+.iconaBoto {
+  font-size: 20px;
+}
