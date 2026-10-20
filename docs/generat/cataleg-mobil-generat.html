@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ca"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#111317;color:#e2e2e8;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-container":"#c4e7ff","surface-container-high":"#282a2e","surface-container":"#1e2024","on-secondary":"#213600","inverse-primary":"#506600","inverse-on-surface":"#2f3035","primary-fixed":"#c3f400","on-secondary-fixed":"#121f00","background":"#111317","tertiary":"#ffffff","on-surface":"#e2e2e8","on-primary-container":"#556d00","surface-container-highest":"#333539","surface-bright":"#37393e","on-secondary-container":"#304b00","tertiary-fixed":"#c4e7ff","surface-dim":"#111317","on-tertiary-fixed":"#001e2c","primary":"#ffffff","outline-variant":"#444933","on-primary-fixed":"#161e00","on-background":"#e2e2e8","on-error-container":"#ffdad6","on-tertiary-container":"#006c93","surface-variant":"#333539","secondary-container":"#83c300","surface-container-low":"#1a1c20","surface-tint":"#abd600","secondary-fixed-dim":"#98da27","on-tertiary":"#00354a","surface-container-lowest":"#0c0e12","on-surface-variant":"#c4c9ac","on-secondary-fixed-variant":"#334f00","on-primary-fixed-variant":"#3c4d00","surface":"#111317","inverse-surface":"#e2e2e8","secondary-fixed":"#b2f746","on-primary":"#283500","outline":"#8e9379","on-tertiary-fixed-variant":"#004c69","error-container":"#93000a","secondary":"#9ddf2e","error":"#ffb4ab","on-error":"#690005","primary-container":"#c3f400","tertiary-fixed-dim":"#7bd0ff","primary-fixed-dim":"#abd600"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1.5rem","gutter-mobile":"1rem","space-2xl":"3rem","space-xl":"2rem","space-3xl":"4.5rem","space-md":"1rem","space-xs":"0.5rem","space-2xs":"0.25rem","space-lg":"1.5rem","gutter-desktop":"2rem","gutter":"1.5rem","space-sm":"0.75rem","margin-mobile":"1rem","margin-desktop":"3rem"},"fontFamily":{"headline-xl":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"]},"fontSize":{"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Menú de navegació" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex items-center gap-space-xs"><img alt="ActivePrat Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V6-QsDTNI3OT4UJ-qkid3YVHh1zhAa24zjkzNa0lpiGBZ7FNImOgXm-9oqyQXnRwNCpfpP5ztNxyf5KyVfEXA1Jtu3msdF3aUlsf_7wulQOY6YzB_QkZuc5QVFREDmVj4ElKxPyFFRs0WxfxbXGVX5inUQbNJ13t0xmOMh2I5w9os-LsvQIX03Sv2ey7xuFjsroctFeiCiE3aQZyRYa1jxDjYOXUF2rgvDaOp63lD72Q"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold hidden xs:inline-block">ActivePrat</span></div></div><div class="flex items-center gap-space-xs"><a aria-label="Veure la cistella de la compra" class="relative w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" data-path="cistella" href="#"><span class="material-symbols-outlined text-[24px]">shopping_cart</span><span class="absolute top-2 right-2 bg-primary-container text-on-primary-container font-headline-sm text-[10px] leading-none font-bold w-4 h-4 rounded-full flex items-center justify-center ring-2 ring-surface">2</span></a><a aria-label="Perfil d'usuari" class="w-11 h-11 flex items-center justify-center" data-path="compte" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-white/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAS3j6Y45fcPERnu45SZeYuHziYbvs7O3qr5Yet-_j-1ig_nRv4RsI2p5oAd4cPm6l4ZMEek-soz7sJy6CVrC3AjkGdVh68eIQfqxH43ujaqE1fbHQU8QEnG425sgiXwEnCw3iqmQQaT4CZa6KJCyDpaMthWEoPgNatr_5FfIVlCsQNm1A7sEb53dMYcMGN3xG4C1mfmN3Kx1tDlJ3CT-7QEkj0c3VkKJ7e-M0qSyz"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full max-w-[420px] mx-auto px-gutter-mobile overflow-hidden">
+<!-- HERO COMPACT BANNER -->
+<section class="relative w-full rounded-xl overflow-hidden bg-surface-container-high p-space-lg mb-space-lg shadow-xl">
+<div class="absolute -right-8 -top-8 w-44 h-44 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-start gap-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-primary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Nova Col·lecció 2025</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight font-extrabold mt-1">
+        Supera els teus límits.
+      </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[280px]">
+        Equipament d'alt rendiment per a atletes exigents.
+      </p>
+<a class="mt-space-xs inline-flex items-center justify-center gap-2 h-11 px-5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-md active:scale-95 transition-transform duration-150" href="#cataleg-grid">
+<span>Explora el catàleg</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+</div>
+</section>
+<!-- SEARCH & LIVE FILTERS -->
+<section class="w-full flex flex-col gap-space-sm mb-space-lg">
+<!-- Search Bar -->
+<div class="relative w-full">
+<span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</span>
+<input aria-label="Cerca material esportiu" class="w-full h-12 pl-11 pr-10 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container transition-all" id="search-input" placeholder="Cerca material esportiu..." type="search"/>
+<button aria-label="Esborrar cerca" class="hidden absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center hover:text-on-surface" id="clear-search">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Filter Pills (Touch Scrollable) -->
+<div class="w-full overflow-x-auto no-scrollbar py-0.5 -mx-gutter-mobile px-gutter-mobile flex items-center gap-2" role="tablist">
+<button class="filter-chip active flex-shrink-0 min-h-[44px] px-4 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" data-filter="all" type="button">
+<span class="material-symbols-outlined text-[16px]">apps</span>
+<span>Tot</span>
+</button>
+<button class="filter-chip flex-shrink-0 min-h-[44px] px-4 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5 transition-all hover:bg-surface-container" data-filter="entrenament" type="button">
+<span class="material-symbols-outlined text-[16px]">fitness_center</span>
+<span>Entrenament</span>
+</button>
+<button class="filter-chip flex-shrink-0 min-h-[44px] px-4 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5 transition-all hover:bg-surface-container" data-filter="accessoris" type="button">
+<span class="material-symbols-outlined text-[16px]">watch</span>
+<span>Accessoris</span>
+</button>
+<button class="filter-chip flex-shrink-0 min-h-[44px] px-4 rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center gap-1.5 transition-all hover:bg-surface-container" data-filter="recuperacio" type="button">
+<span class="material-symbols-outlined text-[16px]">spa</span>
+<span>Recuperació</span>
+</button>
+</div>
+<!-- Count & Filter Status Header -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium" id="product-count-label">
+        4 productes disponibles
+      </span>
+<span class="flex items-center gap-1 text-primary-container font-label-sm text-label-sm tracking-wide uppercase">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+        Catàleg Actiu
+      </span>
+</div>
+</section>
+<!-- PRODUCT GRID -->
+<section class="w-full flex flex-col gap-space-md mb-space-2xl" id="cataleg-grid">
+<!-- CARD 1 -->
+<article class="product-item w-full bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col" data-category="entrenament" data-name="manuells ajustables hyperion pro">
+<div class="relative w-full aspect-square bg-surface-container-lowest overflow-hidden">
+<img alt="Manuells Ajustables Hyperion Pro" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBltJyjqAmIwbIM_AG0tYh9ogDGw2eoYmfLd6B4IM4BXoQAFuskEny8ztEHEt0DN_X2dmkl0gJYaEg2p-80GL-AbaQ87BDVL7QEmeAjA6DBlfzbTJZjEfAnle_1Ec7MHEVOtjXXQqqXdiRBaSgdyvsN4zHn7pRTg7VK-KKzl9yNFKgD_8reTA2X8Oj2cvwxzoLA1ioHh9UVKHBgKjkZXvm0sZ5SoboAvi2ca8Wmr4Kf"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider font-extrabold shadow-sm">
+            Novetat
+          </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Afegir a favorits" class="fav-btn w-9 h-9 rounded-full bg-surface-container-high/80 backdrop-blur-md text-on-surface flex items-center justify-center active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-2 flex-grow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Entrenament</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">En estoc</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold line-clamp-1">
+          Manuells Ajustables Hyperion Pro
+        </h2>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-md text-headline-md font-extrabold text-primary">349,00 €</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant line-through">389,00 €</span>
+</div>
+<div class="pt-2 mt-auto">
+<button class="w-full min-h-[44px] rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 hover:bg-surface-bright active:scale-98 transition-all" type="button">
+<span>Veure producte</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 2 -->
+<article class="product-item w-full bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col" data-category="accessoris" data-name="rellotge titan gps pulse">
+<div class="relative w-full aspect-square bg-surface-container-lowest overflow-hidden">
+<img alt="Rellotge Titan GPS Pulse" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN8eV41opuUDXC6RsOBJ4ZROROe_LG0sOILwigJ616djYw_BIGvkodWvwMF-sUPGorvnJ-_E7-GRw4VEPTerIm4_hmhW01PMmSnCUK5sOsqn-OPwPGn8WpLLdqHTbEeKYNo2KteDpLjhtttDa-kKr8UZcfSoCw6o-drhCc61hxJztYW93rCeb2Jxr0h2cd6PfjvnA-_0AAGwOC-2XQkrJK-nGv6ax2y-Mn6_r7GY8b"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider font-extrabold shadow-sm">
+            GPS Pro
+          </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Afegir a favorits" class="fav-btn w-9 h-9 rounded-full bg-surface-container-high/80 backdrop-blur-md text-on-surface flex items-center justify-center active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-2 flex-grow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Accessoris</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">En estoc</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold line-clamp-1">
+          Rellotge Titan GPS Pulse
+        </h2>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-md text-headline-md font-extrabold text-primary">289,90 €</span>
+</div>
+<div class="pt-2 mt-auto">
+<button class="w-full min-h-[44px] rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 hover:bg-surface-bright active:scale-98 transition-all" type="button">
+<span>Veure producte</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 3 (OUT OF STOCK VARIANT) -->
+<article class="product-item w-full bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col opacity-90" data-category="recuperacio" data-name="corro de foam fusion grip">
+<div class="relative w-full aspect-square bg-surface-container-lowest overflow-hidden">
+<img alt="Corró de Foam Fusion Grip" class="w-full h-full object-cover object-center grayscale contrast-75 brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuQUTuM1a6R2bUZ2bn5aUxdu8d8U5cD_AVz7Uoa3-cg3WuFnpT1rJ_eXUrNyNgD7C9WR86bU739ouclrZoNmpAYNqjYEYU9EbI_kwWzwDKmitGMqgd-HSQHVSh3C7y6OgJ-_1VkjXBA5LQt2ZJxiNrBnP6fGJPPniylupe1i0EnJ8eflNw5mb85xcLY0R2DQx6xLNKNFXs8aGtMNGS2YwcAsbl0vOmymitlaPflZ44"/>
+<div class="absolute inset-0 bg-surface-container-lowest/40 pointer-events-none"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase tracking-wider font-extrabold shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+            Esgotat
+          </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Afegir a favorits" class="fav-btn w-9 h-9 rounded-full bg-surface-container-high/80 backdrop-blur-md text-on-surface flex items-center justify-center active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-2 flex-grow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Recuperació</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-error">Temporalment esgotat</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface-variant font-bold line-clamp-1">
+          Corró de Foam Fusion Grip
+        </h2>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-md text-headline-md font-extrabold text-on-surface-variant">44,50 €</span>
+</div>
+<div class="pt-2 mt-auto">
+<button class="w-full min-h-[44px] rounded-lg bg-surface-container-low text-outline font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 cursor-not-allowed opacity-70" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+<span>Avisa'm quan estigui disponible</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 4 -->
+<article class="product-item w-full bg-surface-container rounded-xl overflow-hidden shadow-md flex flex-col" data-category="entrenament" data-name="kit bandes elastiques pro">
+<div class="relative w-full aspect-square bg-surface-container-lowest overflow-hidden">
+<img alt="Kit Bandes Elàstiques Pro" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiULYziFjqLWjM_vszzIaPqdFHv79AWo7z0y5teOZEcK9mT8WJQOZWzRiZzoAIfWvIk5nfQIhGVG8xgLuSzpULLwSkVEh6dB2lIXp4Qz5hR7Y1zfHsqW5MTwGIRppTIq7ixzu79CPuVEOfavvh7WVdEDJ1JyYymVtMTuokPx0qFJ4EshNrwdSw11uEkpIU8jBcOikk7TWD8labFRvZaLKWgrLRuHbOzSpx-LEYQkti"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-primary-container font-label-sm text-label-sm uppercase tracking-wider font-extrabold shadow-sm">
+            Top Vendes
+          </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Afegir a favorits" class="fav-btn w-9 h-9 rounded-full bg-surface-container-high/80 backdrop-blur-md text-on-surface flex items-center justify-center active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-2 flex-grow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Entrenament</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">En estoc</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold line-clamp-1">
+          Kit Bandes Elàstiques Pro
+        </h2>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-headline-md text-headline-md font-extrabold text-primary">39,95 €</span>
+</div>
+<div class="pt-2 mt-auto">
+<button class="w-full min-h-[44px] rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 hover:bg-surface-bright active:scale-98 transition-all" type="button">
+<span>Veure producte</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- EMPTY STATE FOR NO FILTER RESULTS -->
+<div class="hidden w-full flex-col items-center justify-center text-center p-space-xl bg-surface-container-low rounded-xl" id="no-results">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-sm">
+<span class="material-symbols-outlined text-[28px]">search_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-1">Cap resultat trobat</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">No hem trobat cap producte que coincideixi amb la teva cerca.</p>
+<button class="h-11 px-5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md font-semibold hover:bg-surface-bright" id="reset-filter-btn" type="button">
+        Reiniciar filtres
+      </button>
+</div>
+</section>
+<!-- TRUST VALUE BADGES -->
+<section class="w-full bg-surface-container-low rounded-xl p-space-md mb-space-xl">
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface-container/60">
+<span class="material-symbols-outlined text-primary-container text-[22px]">local_shipping</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface leading-tight">Enviament gratuït</span>
+<span class="font-body-sm text-[11px] leading-tight text-on-surface-variant">Comandes &gt;50€</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface-container/60">
+<span class="material-symbols-outlined text-primary-container text-[22px]">verified</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface leading-tight">Garantia 3 anys</span>
+<span class="font-body-sm text-[11px] leading-tight text-on-surface-variant">Cobertura Pro</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 p-2 rounded-lg bg-surface-container/60">
+<span class="material-symbols-outlined text-primary-container text-[22px]">published_with_changes</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface leading-tight">Devolució 30 dies</span>
+<span class="font-body-sm text-[11px] leading-tight text-on-surface-variant">Sense preguntes</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('search-input');
+    const clearBtn = document.getElementById('clear-search');
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const productItems = document.querySelectorAll('.product-item');
+    const noResults = document.getElementById('no-results');
+    const resetBtn = document.getElementById('reset-filter-btn');
+    const countLabel = document.getElementById('product-count-label');
+    const favButtons = document.querySelectorAll('.fav-btn');
+
+    let currentFilter = 'all';
+
+    function updateView() {
+      const query = (searchInput.value || '').trim().toLowerCase();
+      let visibleCount = 0;
+
+      if (query.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+
+      productItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+        const name = item.getAttribute('data-name');
+        
+        const matchesCategory = (currentFilter === 'all') || (category === currentFilter);
+        const matchesQuery = query === '' || name.includes(query) || category.includes(query);
+
+        if (matchesCategory && matchesQuery) {
+          item.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+        noResults.classList.add('flex');
+      } else {
+        noResults.classList.remove('flex');
+        noResults.classList.add('hidden');
+      }
+
+      countLabel.textContent = visibleCount === 1 
+        ? '1 producte disponible' 
+        : visibleCount + ' productes disponibles';
+    }
+
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('active', 'bg-primary-container', 'text-on-primary-container');
+          c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+        chip.classList.add('active', 'bg-primary-container', 'text-on-primary-container');
+        chip.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+        currentFilter = chip.getAttribute('data-filter');
+        updateView();
+      });
+    });
+
+    searchInput.addEventListener('input', updateView);
+
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      updateView();
+      searchInput.focus();
+    });
+
+    resetBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      currentFilter = 'all';
+      filterChips.forEach((c, idx) => {
+        if (idx === 0) {
+          c.classList.add('active', 'bg-primary-container', 'text-on-primary-container');
+          c.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        } else {
+          c.classList.remove('active', 'bg-primary-container', 'text-on-primary-container');
+          c.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        }
+      });
+      updateView();
+    });
+
+    favButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const isFilled = icon.style.fontVariationSettings?.includes("'FILL' 1");
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('text-primary-container');
+          btn.classList.add('text-on-surface');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.remove('text-on-surface');
+          btn.classList.add('text-primary-container');
+        }
+      });
+    });
+  })();
+</script><footer class="mt-space-2xl px-gutter-mobile py-space-xl bg-surface-container-lowest text-center"><div class="flex flex-wrap justify-center gap-x-space-md gap-y-space-xs font-label-md text-label-md text-on-surface-variant mb-space-md"><a class="hover:text-primary transition-colors" href="#">Atenció al Client</a><span class="text-outline-variant">•</span><a class="hover:text-primary transition-colors" href="#">Enviament i Devolucions</a><span class="text-outline-variant">•</span><a class="hover:text-primary transition-colors" href="#">Política de Privadesa</a></div><p class="font-body-sm text-body-sm text-outline">© 2025 ActivePrat SL. Rendiment i enginyeria esportiva.</p></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-low/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.6)]" data-active-classes="text-primary-container font-semibold"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] transition-all text-primary-container font-semibold" data-path="cataleg" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm">Botiga</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="cerca" href="#"><span class="material-symbols-outlined text-[22px]">search</span><span class="font-label-sm text-label-sm">Cerca</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="novetats" href="#"><span class="material-symbols-outlined text-[22px]">bolt</span><span class="font-label-sm text-label-sm">Novetats</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="preferits" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="font-label-sm text-label-sm">Preferits</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all" data-path="compte" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm">Compte</span></a></div></nav></body></html>
