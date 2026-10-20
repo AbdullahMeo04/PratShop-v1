@@ -1,0 +1,343 @@
+/* src/pagines/Inici.module.css */
+
+/* ─── Hero ─────────────────────────────────────────── */
+.seccio-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Resplendor atmosfèric de fons */
+.glow {
+  position: absolute;
+  top: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 720px;
+  height: 340px;
+  background: radial-gradient(ellipse, color-mix(in srgb, var(--color-primary-container) 10%, transparent) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: var(--margin-mobile);
+  padding-block: var(--space-2xl) var(--space-3xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-inline: var(--margin);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding-inline: var(--margin-desktop);
+  }
+}
+
+/* Pill de col·lecció */
+.pill-col-leccio {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-2xs) var(--space-sm);
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface-container-high);
+  color: var(--color-primary-fixed);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-sm);
+  line-height: var(--lh-label-sm);
+  font-weight: var(--fw-label-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.punt-pulse {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-fixed);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Títol hero */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 56rem;
+  gap: var(--space-sm);
+}
+
+.hero-titol {
+  font-family: var(--font-heading);
+  font-size: var(--text-display-hero-mobile);
+  line-height: var(--lh-display-hero-mobile);
+  letter-spacing: var(--ls-display-hero-mobile);
+  font-weight: var(--fw-display-hero);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .hero-titol {
+    font-size: var(--text-display-hero);
+    line-height: var(--lh-display-hero);
+    letter-spacing: var(--ls-display-hero);
+  }
+}
+
+/* Accent volt al títol */
+.hero-accent {
+  color: var(--color-primary-fixed);
+}
+
+.hero-descripcio {
+  font-family: var(--font-body);
+  font-size: var(--text-body-lg);
+  line-height: var(--lh-body-lg);
+  color: var(--color-on-surface-variant);
+  max-width: 42rem;
+}
+
+/* Accions del hero */
+.hero-accions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-md);
+  padding-top: var(--space-xs);
+}
+
+.hero-badge-text {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-on-surface-variant);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-md);
+  line-height: var(--lh-label-md);
+  font-weight: var(--fw-label-md);
+  padding-inline: var(--space-xs);
+}
+
+.hero-badge-icona {
+  color: var(--color-primary-fixed);
+}
+
+/* Botó CTA hero (lime) */
+.boto-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0 var(--space-lg);
+  height: 48px;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-fixed);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-lg);
+  font-weight: var(--fw-label-lg);
+  text-decoration: none;
+  transition: background-color var(--transition-normal), transform var(--transition-fast);
+}
+
+.boto-hero:hover {
+  background-color: var(--color-primary-fixed-dim);
+  transform: translateY(-1px);
+}
+
+.boto-hero:focus-visible {
+  outline: 2px solid var(--color-primary-container);
+  outline-offset: 2px;
+}
+
+/* Botó secundari "Veure tot el catàleg" */
+.boto-veure-tot {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  height: 36px;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface-container-high);
+  border: 1px solid var(--color-outline-variant);
+  color: var(--color-on-surface);
+  font-family: var(--font-heading);
+  font-size: var(--text-label-md);
+  font-weight: var(--fw-label-md);
+  text-decoration: none;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.boto-veure-tot:hover {
+  background-color: var(--color-surface-container-highest);
+  border-color: var(--color-primary-container);
+  color: var(--color-primary-fixed);
+}
+
+.boto-veure-tot:focus-visible {
+  outline: 2px solid var(--color-primary-container);
+  outline-offset: 2px;
+}
+
+/* ─── Seccio de proposicions de valor ────────────────── */
+.seccio-valors {
+  width: 100%;
+  background-color: var(--color-surface-container-low);
+  padding-block: var(--space-2xl);
+}
+
+.valors-interior {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: var(--margin-mobile);
+}
+
+@media (min-width: 768px) {
+  .valors-interior {
+    padding-inline: var(--margin);
+  }
+}
+
+@media (min-width: 1024px) {
+  .valors-interior {
+    padding-inline: var(--margin-desktop);
+  }
+}
+
+.valors-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .valors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.valor-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-surface-container);
+  border: 1px solid color-mix(in srgb, var(--color-on-surface) 5%, transparent);
+}
+
+.valor-icona {
+  padding: var(--space-sm);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface-container-high);
+  color: var(--color-primary-fixed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.valor-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.valor-titol {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-sm);
+  font-weight: var(--fw-headline-sm);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.valor-descripcio {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  line-height: var(--lh-body-sm);
+  color: var(--color-on-surface-variant);
+}
+
+/* ─── Secció de productes destacats ──────────────────── */
+.seccio-destacats {
+  width: 100%;
+  padding-block: var(--space-2xl);
+}
+
+.destacats-interior {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: var(--margin-mobile);
+}
+
+@media (min-width: 768px) {
+  .destacats-interior {
+    padding-inline: var(--margin);
+  }
+}
+
+@media (min-width: 1024px) {
+  .destacats-interior {
+    padding-inline: var(--margin-desktop);
+  }
+}
+
+.destacats-capcal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.destacats-titol {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline-lg-mobile);
+  line-height: var(--lh-headline-lg-mobile);
+  letter-spacing: var(--ls-headline-lg);
+  font-weight: var(--fw-headline-lg);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .destacats-titol {
+    font-size: var(--text-headline-lg);
+    line-height: var(--lh-headline-lg);
+  }
+}
+
+/* Grid de productes: auto-fit per a responsivitat (B5) */
+.productes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--gutter);
+}
+
+.iconaHero {
+  font-size: 20px;
+}
+
+.iconaHeroBadge {
+  font-size: 18px;
+}
+
+.iconaValor {
+  font-size: 28px;
+}
+
+.iconaVeureTot {
+  font-size: 16px;
+}
+
